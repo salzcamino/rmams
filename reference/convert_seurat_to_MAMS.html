@@ -42,15 +42,27 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">convert_seurat_to_MAMS</span><span class="op">(</span><span class="va">object_list</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">convert_seurat_to_MAMS</span><span class="op">(</span><span class="va">object_list</span>, <span class="va">observation_subsets</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>object_list</dt>
-<dd></dd>
+<dd><p>A named list of Seurat objects to be converted to MAMS format</p></dd>
+
+
+<dt>observation_subsets</dt>
+<dd><p>A vector with same length as object_list indicating the
+observation subset for each Seurat object. One of: full, filtered, threshold, detected,
+nonartifact, clean.</p></dd>
 
 </dl></div>
+    <div class="section level2">
+    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
+    
+
+<p>A MAMS object containing all the extracted metadata fields.</p>
+    </div>
 
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
