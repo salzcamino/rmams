@@ -19,6 +19,9 @@
     <loc>https://single-cell-mams.github.io/rmams/index.html</loc>
   </url>
   <url>
+    <loc>https://single-cell-mams.github.io/rmams/reference/FEA-class.html</loc>
+  </url>
+  <url>
     <loc>https://single-cell-mams.github.io/rmams/reference/FOM-class.html</loc>
   </url>
   <url>
@@ -185,5 +188,8 @@
   </url>
   <url>
     <loc>https://single-cell-mams.github.io/rmams/reference/representation_description-set-FOM-method.html</loc>
+  </url>
+  <url>
+    <loc>https://single-cell-mams.github.io/rmams/reference/write_MAMS_to_JSON.html</loc>
   </url>
 </urlset>
