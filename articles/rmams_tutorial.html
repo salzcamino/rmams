@@ -371,8 +371,14 @@ txt or mtx file as well.</p>
 for export. MAMS and JSON formats are interchangeable.<a class="anchor" aria-label="anchor" href="#here-we-show-how-you-can-convert-the-mams-object-to-the-json-format-for-export--mams-and-json-formats-are-interchangeable-"></a>
 </h4>
 <div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/write_MAMS_to_JSON.html">write_MAMS_to_JSON</a></span><span class="op">(</span>MAMS<span class="op">=</span><span class="va">result</span>, filepath <span class="op">=</span> <span class="st">"../inst/extdata/pbmc1k_rna_adt_seurat_mams.json"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/write_MAMS_to_output.html">write_MAMS_to_output</a></span><span class="op">(</span>MAMS<span class="op">=</span><span class="va">result</span>, filepath <span class="op">=</span> <span class="st">"../inst/extdata/pbmc1k_rna_adt_seurat_mams.JSON"</span>,format <span class="op">=</span> <span class="st">"JSON"</span><span class="op">)</span></span></code></pre></div>
 </div>
+</div>
+<div class="section level3">
+<h3 id="step-5-saving-mams-as-yaml">Step 5: Saving MAMS as YAML<a class="anchor" aria-label="anchor" href="#step-5-saving-mams-as-yaml"></a>
+</h3>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/write_MAMS_to_output.html">write_MAMS_to_output</a></span><span class="op">(</span>MAMS<span class="op">=</span><span class="va">result</span>, filepath <span class="op">=</span> <span class="st">"../inst/extdata/pbmc1k_rna_adt_seurat_mams.yml"</span>,format <span class="op">=</span> <span class="st">"YAML"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="support-for-seurat-v5-objects">Support for Seurat V5 objects<a class="anchor" aria-label="anchor" href="#support-for-seurat-v5-objects"></a>
@@ -381,7 +387,7 @@ for export. MAMS and JSON formats are interchangeable.<a class="anchor" aria-lab
 <h5 id="in-this-example-we-show-how-we-can-extract-counts-from-seurat-v5-object-and-make-a-v3-object-that-can-be-used-with-rmams-pacakge">In this example we show how we can extract counts from Seurat V5
 object and make a V3 object that can be used with rmams pacakge<a class="anchor" aria-label="anchor" href="#in-this-example-we-show-how-we-can-extract-counts-from-seurat-v5-object-and-make-a-v3-object-that-can-be-used-with-rmams-pacakge"></a>
 </h5>
-<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>Seurat.object.assay.version <span class="op">=</span> <span class="st">"v5"</span><span class="op">)</span></span>
 <span></span>
 <span></span>
